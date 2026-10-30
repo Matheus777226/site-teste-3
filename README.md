@@ -24,3 +24,9 @@ node --check config.js
 ```
 
 Publique os arquivos estáticos em hospedagem HTTPS. Não há backend nem segredos. As animações respeitam a preferência de redução de movimento. Confirme a aparência e o redirecionamento para o aplicativo WhatsApp em dispositivos reais antes de publicar.
+
+## Direção editorial
+
+As fotografias em `assets/` foram geradas por IA para uso ilustrativo, convertidas para WebP e não representam clientes, resultados ou instalações reais. O aviso está visível na página. Substitua-as por registros autorizados da marca quando disponíveis. A série completa pesa aproximadamente 185 KB; as imagens fora do hero usam carregamento lazy.
+
+A iconografia é SVG customizada. Os serviços mantêm `<details>` nativo e CTAs independentes de JavaScript. Movimentos de parallax, botões e revelação respeitam `prefers-reduced-motion`.

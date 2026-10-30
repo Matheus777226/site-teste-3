@@ -9,6 +9,11 @@ function updateScroll() { const distance = document.documentElement.scrollHeight
  proof.style.setProperty('--proof-shift', `${Math.max(-12, Math.min(12, (innerHeight / 2 - rect.top) * .025))}px`);
  const r = final.getBoundingClientRect();
  final.style.setProperty('--flower-turn', `${Math.max(-25, Math.min(65, (innerHeight - r.top) * .06))}deg`);
+ const hero = document.querySelector('.hero');
+ hero.style.setProperty('--hero-drift', `${Math.min(28, scrollY * .045)}px`);
+ const visual = document.querySelector('.visual-manifesto');
+ const vr = visual.getBoundingClientRect();
+ visual.style.setProperty('--editorial-drift', `${Math.max(-16, Math.min(16, (innerHeight / 2 - vr.top) * .035))}px`);
  } queued = false; }
 addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(updateScroll); } }, {passive: true});
 updateScroll();
@@ -21,3 +26,15 @@ if (!reducedMotion && matchMedia('(pointer:fine)').matches) {
  button.addEventListener('pointerleave', () => button.style.transform = '');
  });
 }
+
+// Native details remain usable without JavaScript; animate only panel contents.
+const treatments = [...document.querySelectorAll('.treatment')];
+treatments.forEach(item => {
+ item.addEventListener('toggle', () => {
+  if (!item.open || reducedMotion) return;
+  item.querySelector('.treatment-content').animate(
+   [{opacity:0, transform:'translateY(12px)'},{opacity:1, transform:'translateY(0)'}],
+   {duration:650, easing:'cubic-bezier(.2,.65,.3,1)'}
+  );
+ });
+});
