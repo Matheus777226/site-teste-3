@@ -34,3 +34,7 @@ A iconografia é SVG customizada. Os serviços mantêm `<details>` nativo e CTAs
 ## Miniquestionário
 
 A seção `#seu-cuidado` apresenta três perguntas sobre interesse, objetivo e prazo. A pessoa pode voltar, revisar e abrir o WhatsApp com as respostas na mensagem. Não há envio automático, persistência local ou transmissão ao servidor. O número de destino é o oficial do studio. Com JavaScript desativado, um link oferece contato direto.
+
+## Acervo oficial da loja
+
+Os arquivos `assets/loja-*.jpg` foram fornecidos pela Pele Nua e substituem as imagens ilustrativas de LED, cera, estética facial, depilação masculina e outros cuidados (unhas). As fotos ampliadas usam `object-fit: contain` para preservar o conteúdo, logotipos e créditos originais. A imagem de sobrancelhas continua ilustrativa. Não foram acrescentados serviços ou nomes de profissionais ao texto com base nas imagens.
