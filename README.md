@@ -30,3 +30,7 @@ Publique os arquivos estáticos em hospedagem HTTPS. Não há backend nem segred
 As fotografias em `assets/` foram geradas por IA para uso ilustrativo, convertidas para WebP e não representam clientes, resultados ou instalações reais. O aviso está visível na página. Substitua-as por registros autorizados da marca quando disponíveis. As imagens fora do hero usam carregamento lazy. Cada tratamento possui uma foto ilustrativa própria, exibida em miniatura no acordeão fechado e ampliada no painel aberto.
 
 A iconografia é SVG customizada. Os serviços mantêm `<details>` nativo e CTAs independentes de JavaScript. Movimentos de parallax, botões e revelação respeitam `prefers-reduced-motion`.
+
+## Miniquestionário
+
+A seção `#seu-cuidado` apresenta três perguntas sobre interesse, objetivo e prazo. A pessoa pode voltar, revisar e abrir o WhatsApp com as respostas na mensagem. Não há envio automático, persistência local ou transmissão ao servidor. O número de destino é o oficial do studio. Com JavaScript desativado, um link oferece contato direto.
