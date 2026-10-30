@@ -14,7 +14,7 @@ python3 -m http.server 3000 --bind 0.0.0.0
 
 Os dados oficiais fornecidos estão integrados em `index.html`: endereço, horários, serviços, métricas e Instagram. Cada CTA é um link nativo do WhatsApp, com mensagem específica por tratamento, funcional mesmo sem JavaScript. Ao trocar o telefone, atualize os links de `index.html`, os dados estruturados e `config.js`.
 
-Não há preços, depoimentos inventados ou garantias de resultados. As métricas apresentadas foram fornecidas pelo studio. O mapa Google carrega sob demanda e há um link independente para traçar rota. Google Fonts é opcional e conta com fontes locais alternativas.
+Não há preços, depoimentos inventados ou garantias de resultados. As métricas apresentadas foram fornecidas pelo studio. A localização usa uma ilustração vetorial conceitual da marca, com links para abrir a rota real no Google Maps. A arte não é um mapa geográfico de navegação. Google Fonts é opcional e conta com fontes locais alternativas.
 
 ## Validação
 
